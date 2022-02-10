@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>A-PLAN INSURANCE BROKERS LTD</title>
+   
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/freelancer.css" rel="stylesheet">
+    <link href="css/flexslider.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/aplancapture.ico">
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <script src="js/jquery.1.7.1.js"></script>
+	<link rel="stylesheet" type="text/css" href="js/tips/tooltipster.css" />
+	<script type="text/javascript" src="js/tips/jquery.tooltipster.js"></script>
+    
+		<script>
+            
+              // When the document loads do everything inside here ...
+              $(document).ready(function(){
+                   
+          $('.flexslider').flexslider({
+         animation: "fade"
+          });
+          $('.tooltip').tooltipster({
+                animation: 'grow',
+                position:'bottom-left',
+                        offsetY:-5,
+                        maxWidth: 300,
+                        theme: '.tooltipster-light',
+                interactive:true,
+                content:'' //$(this).parent().find('p').html()
+            
+            });	
+              });
+              
+          </script>
+
+</head>
+
+<body id="page-top" class="index">
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <!-- use jssor.slider.mini.js (40KB) or jssor.sliderc.mini.js (32KB, with caption, no slideshow) or jssor.sliders.mini.js (28KB, no caption, no slideshow) instead for release -->
+    <!-- jssor.slider.mini.js = jssor.sliderc.mini.js = jssor.sliders.mini.js = (jssor.js + jssor.slider.js) -->
+    <script type="text/javascript" src="js/jssor.js"></script>
+    <script type="text/javascript" src="js/jssor.slider.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+
+            var _CaptionTransitions = [];
+            _CaptionTransitions["L"] = { $Duration: 900, x: 0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+            _CaptionTransitions["R"] = { $Duration: 900, x: -0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+            _CaptionTransitions["T"] = { $Duration: 900, y: 0.6, $Easing: { $Top: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+            _CaptionTransitions["B"] = { $Duration: 900, y: -0.6, $Easing: { $Top: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+            _CaptionTransitions["ZMF|10"] = { $Duration: 900, $Zoom: 11, $Easing: { $Zoom: $JssorEasing$.$EaseOutQuad, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 };
+            _CaptionTransitions["RTT|10"] = { $Duration: 900, $Zoom: 11, $Rotate: 1, $Easing: { $Zoom: $JssorEasing$.$EaseOutQuad, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInExpo }, $Opacity: 2, $Round: { $Rotate: 0.8} };
+            _CaptionTransitions["RTT|2"] = { $Duration: 900, $Zoom: 3, $Rotate: 1, $Easing: { $Zoom: $JssorEasing$.$EaseInQuad, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInQuad }, $Opacity: 2, $Round: { $Rotate: 0.5} };
+            _CaptionTransitions["RTTL|BR"] = { $Duration: 900, x: -0.6, y: -0.6, $Zoom: 11, $Rotate: 1, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Top: $JssorEasing$.$EaseInCubic, $Zoom: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInCubic }, $Opacity: 2, $Round: { $Rotate: 0.8} };
+            _CaptionTransitions["CLIP|LR"] = { $Duration: 900, $Clip: 15, $Easing: { $Clip: $JssorEasing$.$EaseInOutCubic }, $Opacity: 2 };
+            _CaptionTransitions["MCLIP|L"] = { $Duration: 900, $Clip: 1, $Move: true, $Easing: { $Clip: $JssorEasing$.$EaseInOutCubic} };
+            _CaptionTransitions["MCLIP|R"] = { $Duration: 900, $Clip: 2, $Move: true, $Easing: { $Clip: $JssorEasing$.$EaseInOutCubic} };
+
+            var options = {
+                $FillMode: 2,                                       //[Optional] The way to fill image in slide, 0 stretch, 1 contain (keep aspect ratio and put all inside slide), 2 cover (keep aspect ratio and cover whole slide), 4 actual size, 5 contain for large image, actual size for small image, default value is 0
+                $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                $AutoPlayInterval: 4000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+                $PauseOnHover: 1,                                   //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
+
+                $ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+                $SlideEasing: $JssorEasing$.$EaseOutQuint,          //[Optional] Specifies easing for right to left animation, default value is $JssorEasing$.$EaseOutQuad
+                $SlideDuration: 1200,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+                $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
+                //$SlideWidth: 600,                                 //[Optional] Width of every slide in pixels, default value is width of 'slides' container
+                //$SlideHeight: 300,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
+                $SlideSpacing: 0, 					                //[Optional] Space between each slide in pixels, default value is 0
+                $DisplayPieces: 1,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
+                $ParkingPosition: 0,                                //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
+                $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+                $PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
+                $DragOrientation: 1,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+
+                $CaptionSliderOptions: {                            //[Optional] Options which specifies how to animate caption
+                    $Class: $JssorCaptionSlider$,                   //[Required] Class to create instance to animate caption
+                    $CaptionTransitions: _CaptionTransitions,       //[Required] An array of caption transitions to play caption, see caption transition section at jssor slideshow transition builder
+                    $PlayInMode: 1,                                 //[Optional] 0 None (no play), 1 Chain (goes after main slide), 3 Chain Flatten (goes after main slide and flatten all caption animations), default value is 1
+                    $PlayOutMode: 3                                 //[Optional] 0 None (no play), 1 Chain (goes before main slide), 3 Chain Flatten (goes before main slide and flatten all caption animations), default value is 1
+                },
+
+                $BulletNavigatorOptions: {                                //[Optional] Options to specify and enable navigator or not
+                    $Class: $JssorBulletNavigator$,                       //[Required] Class to create navigator instance
+                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $AutoCenter: 1,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                    $Steps: 1,                                      //[Optional] Steps to go for each navigation request, default value is 1
+                    $Lanes: 1,                                      //[Optional] Specify lanes to arrange items, default value is 1
+                    $SpacingX: 8,                                   //[Optional] Horizontal space between each item in pixel, default value is 0
+                    $SpacingY: 8,                                   //[Optional] Vertical space between each item in pixel, default value is 0
+                    $Orientation: 1                                 //[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1
+                },
+
+                $ArrowNavigatorOptions: {                       //[Optional] Options to specify and enable arrow navigator or not
+                    $Class: $JssorArrowNavigator$,              //[Requried] Class to create arrow navigator instance
+                    $ChanceToShow: 1,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $AutoCenter: 2,                                 //[Optional] Auto center arrows in parent container, 0 No, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                    $Steps: 1                                       //[Optional] Steps to go for each navigation request, default value is 1
+                }
+            };
+
+            var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizes
+            function ScaleSlider() {
+                var bodyWidth = document.body.clientWidth;
+                if (bodyWidth)
+                    jssor_slider1.$ScaleWidth(Math.min(bodyWidth, 1920));
+                else
+                    window.setTimeout(ScaleSlider, 30);
+            }
+
+            ScaleSlider();
+
+            if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
+                $(window).bind('resize', ScaleSlider);
+            }
+
+            //if (navigator.userAgent.match(/(iPhone|iPod|iPad)/)) {
+            //    $(window).bind("orientationchange", ScaleSlider);
+            //}
+            //responsive code end
+        });
+    </script>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#page-top"><img class="img-responsive" src="img/aplanlogo.png" alt="A-Plan Insurance Brokers Logo" width="100px" height="150px" /></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">About us</a>
+                    </li>
+                    
+                    <li class="page-scroll">
+                        <a href="#portfolio">Our Clientele</a>
+                    </li>
+                    
+                    <li class="page-scroll">
+                        <a href="#ourservices">Our Services</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#ContactUs">Contact Us</a>
+                    </li>
+                   
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+            	<div class="col-lg-12">
+                  
+                  
+				  
+				  	<div id="slider1_container" style="position: relative; margin: 0 auto;
+        top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block;
+                top: 0px; left: 0px; width: 100%; height: 100%;">
+            </div>
+            <div style="position: absolute; display: block; background: url(img/loading.gif) no-repeat center center;
+                top: 0px; left: 0px; width: 100%; height: 100%;">
+            </div>
+        </div>
+        <!-- Slides Container -->
+        <div data-u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1300px;
+            height: 500px; overflow: hidden;">
+            <div>
+                <img data-u="image" src="img/1920/APlan-claims.jpg" alt="We settle claims fairly and efficiently " />
+                <div data-u="caption" data-t="NO" data-t3="RTT|2" data-r3="137.5%" data-du3="3000" data-d3="500" style="position: absolute; width: 445px; height: 300px; top: 100px; left: 600px;">
+                   
+                </div>
+                <div data-u="caption" data-t="RTT|2" data-r="-75%" data-du="1600" data-d="2500" data-t2="NO" style="position: absolute; width: 470px; height: 220px; top: 120px; left: 650px;">
+                     
+                </div>
+                <div style="position: absolute; width: 480px; height: 120px; top: 30px; left: 30px; padding: 5px;
+                    text-align: left; line-height: 60px; text-transform: uppercase; font-size: 50px;
+                        color: #FFFFFF;">
+                </div>
+                <div style="position: absolute; width: 480px; height: 120px; top: 300px; left: 30px; padding: 5px;
+                    text-align: left; line-height: 36px; font-size: 30px;
+                        color: #FFFFFF;">
+                        
+                </div>
+            </div>
+            <div>
+                <img data-u="image" src="img/1920/APlan-Insurance-Needs.png" alt="Come to A-Plan Insurance Brokers for ALL your insurance needs" />
+                <div style="position: absolute; width: 480px; height: 120px; top: 30px; left: 30px; padding: 5px;
+                    text-align: left; line-height: 60px; text-transform: uppercase; font-size: 50px;
+                        color: #FFFFFF;">
+                </div>
+                <div style="position: absolute; width: 480px; height: 120px; top: 300px; left: 30px; padding: 5px;
+                    text-align: left; line-height: 36px; font-size: 30px;
+                        color: #FFFFFF;">
+                        
+                </div>
+            </div>
+            
+             <div>
+                <img data-u="image" src="img/1920/KenGen-Commissioning.jpg" alt="A-Plan team attending the Commissioning of Ken-Gens 140MW " />
+                <div style="position: absolute; width: 480px; height: 120px; top: 30px; left: 30px; padding: 5px;
+                    text-align: left; line-height: 60px; text-transform: uppercase; font-size: 50px;
+                        color: #FFFFFF;">
+                </div>
+                <div style="position: absolute; width: 480px; height: 120px; top: 300px; left: 30px; padding: 5px;
+                    text-align: left; line-height: 36px; font-size: 30px;
+                        color: #FFFFFF;">
+                      
+                </div>
+            </div>
+            
+             <div>
+                <img data-u="image" src="img/1920/AIBK-Membership.png" alt="A-Plan Insurance Brokers Ltd as member of AIBK" />
+                <div style="position: absolute; width: 480px; height: 120px; top: 30px; left: 30px; padding: 5px;
+                    text-align: left; line-height: 60px; text-transform: uppercase; font-size: 50px;
+                        color: #FFFFFF;">
+                </div>
+                <div style="position: absolute; width: 480px; height: 120px; top: 300px; left: 30px; padding: 5px;
+                    text-align: left; line-height: 36px; font-size: 30px;
+                        color: #FFFFFF;">
+                      
+                </div>
+            </div>
+            
+             <div>
+                <img data-u="image" src="img/1920/Customer-is-king.png" alt="Come to A-Plan Insurance Brokers for ALL your insurance needs" />
+                <div style="position: absolute; width: 480px; height: 120px; top: 30px; left: 30px; padding: 5px;
+                    text-align: left; line-height: 60px; text-transform: uppercase; font-size: 50px;
+                        color: #FFFFFF;">
+                </div>
+                <div style="position: absolute; width: 480px; height: 120px; top: 300px; left: 30px; padding: 5px;
+                    text-align: left; line-height: 36px; font-size: 30px;
+                        color: #FFFFFF;">
+                        
+                </div>
+            </div>
+            
+             <div>
+                <img data-u="image" src="img/KaribuKengen.jpg" alt="Kengen Visit" />
+                <div style="position: absolute; width: 480px; height: 120px; top: 30px; left: 30px; padding: 5px;
+                    text-align: left; line-height: 60px; text-transform: uppercase; font-size: 50px;
+                        color: #FFFFFF;">
+                </div>
+                <div style="position: absolute; width: 480px; height: 120px; top: 300px; left: 30px; padding: 5px;
+                    text-align: left; line-height: 36px; font-size: 30px;
+                        color: #FFFFFF;">
+                        
+                </div>
+            </div>
+            
+            <div>
+                <img data-u="image" src="img/Training2.jpg" alt="A-Plan Team at a presentation at GDC"/>
+                <div style="position: absolute; width: 480px; height: 120px; top: 30px; left: 30px; padding: 5px;
+                    text-align: left; line-height: 60px; text-transform: uppercase; font-size: 50px;
+                        color: #FFFFFF;">
+                </div>
+                <div style="position: absolute; width: 480px; height: 120px; top: 300px; left: 30px; padding: 5px;
+                    text-align: left; line-height: 36px; font-size: 30px;
+                        color: #FFFFFF;">
+                        
+                </div>
+            </div>
+        </div>
+                
+        <!-- Bullet Navigator Skin Begin -->
+        <!-- bullet navigator container -->
+        <div data-u="navigator" class="jssorb21" style="position: absolute; bottom: 26px; left: 6px;">
+            <!-- bullet navigator item prototype -->
+            <div data-u="prototype" style="POSITION: absolute; WIDTH: 19px; HEIGHT: 19px; text-align:center; line-height:19px; color:White; font-size:12px;"></div>
+        </div>
+
+        <span data-u="arrowleft" class="jssora21l" style="width: 55px; height: 55px; top: 123px; left: 8px;">
+        </span>
+        <!-- Arrow Right -->
+        <span data-u="arrowright" class="jssora21r" style="width: 55px; height: 55px; top: 123px; right: 8px">
+        </span>
+        <!-- Arrow Navigator Skin End -->
+        <a style="display: none" href="#">slideshow</a>
+    </div>
+
+                </div>
+
+            <div class="intro-text">
+                <span class="skills">
+                <h4>A-Plan insurance Brokers Limited is a duly registered insurance intermediary firm incorporated in 2006, in accordance with the requirements of the Companies Act Cap. 486 of the Laws of Kenya.</h4>
+                
+                </span>
+            
+            
+              </div>
+            </div>
+        </div>
+    </header>
+
+    
+    <!-- About Section -->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About us</h2>
+                    <hr class="star-light">
+                </div>
+                
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-3 ">
+                <h3>Our Vision</h3>
+                    <p>To be the leading Insurance Intermediary Solutions Provider in East & Central Africa by 2020</p>
+                </div>
+                
+                 <div class="col-lg-3 ">
+                <h3>Our Mission</h3>
+                    <p>To provide efficient, value added, uncompromised all round insurance service to the satisfaction of all our clientele and to make positive contribution to society and environment in the process. </p>
+                </div>
+                
+                 <div class="col-lg-3 ">
+                <h3>Our Objective</h3>
+                    <p>To provide insurance solutions and risk management advisory services that build efficiency and superior capacity in manpower and material resources utilization and facilitate delivery of quality products so as to achieve a maximum return on our clients' investment in each insurance service they purchase whether in life or general insurance.</p>
+                </div>
+                
+                <div class="col-lg-3 ">
+                <h3>Our Core Values</h3>
+                    <p> Integrity, Professionalism, Efficiency, Customer focus, Accountability, Innovativeness, Service delivery </p>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Our Clients</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                 
+                        <img src="img/KenGenLogo.png" class="img-responsive" alt="Kengen">
+                    
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                 
+                        <img src="img/GDClogo.png" class="img-responsive" alt="">
+                    
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                   
+                        <img src="img/JKFlogo1.png" class="img-responsive" alt="">
+                    
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    
+                        <img src="img/KEBSlogo1.png" class="img-responsive" alt="">
+                    
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    
+                        <img src="img/KSClogo.png" class="img-responsive" alt="">
+                    
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    
+                        <img src="img/KENYAUTALIIlogo1.png" class="img-responsive" alt="">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+        <!-- Our services section -->
+     <section class="success" id="ourservices">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                        <h2>Our Services</h2>
+                        <hr class="star-light">
+                        </div>
+                    </div>
+					<div id="popup">
+                    <div class="row">
+					
+                        <div class="col-lg-4 col-lg-offset-3">
+						
+                        <p><a href="#" onClick="return false;">Motor Insurance<span>Cover is defined under the following three categories. 
+                        <br><b>Comprehensive:</b> loss of or damage to the motor vehicle and its accessories and spare parts including any liability that the insured may be 				
+                        <br><b>Third party only:</b> Liability that the insured may be legally liable to pay through the use for the motor vehicle.
+                        <br><b>Third Party Fire & Theft:</b> loss of or damage by fire to the motor vehicle and its accessories and spare parts including any liability that the insured may be legally liable to pay.</span></a></p>
+                        
+						<p><a href="#" onClick="return false;">Fire and related perils<span>Covers buildings (1st class construction) and contents against Fire, Explosion, Lightning, Earthquake, Riot and Strike, Malicious Damage, Storm, Flood, Burst Pipes and Impact. </span></a></p>
+						
+						<p><a href="#" onClick="return false;">Consequential loss<span> This policy is also called a Loss of Profit policy or business interruption policy. It offers compensation for profits lost as a result of damage to insured property following a fire. The compensation is for the Gross profits lost and for wages paid out during the period when the business is interrupted.   </span></a></p>
+																		
+						<p><a href="#" onClick="return false;">Burglary<span>Covers against loss or damage to contents by theft accompanied by visible and forcible entry or exit or any attempt thereat, including damage to the building. </span></a></p>
+						 
+						<p><a href="#" onClick="return false;">Money/cash in transit<span>The Money policy covers any of the following circumstances: 
+                        <br><b> Loss of money at your premises during business hours, or in specified safes or strong rooms.</b>
+                        <br><b> Loss of money in transit.</b>
+                        <br><b> Loss of money in the custody of an authorized employee.</b>
+                        <br><b> Loss of, or damage to safes or strong rooms insured in the process of a theft or an attempt threat.</b>
+                        </span></a></p>
+						
+						<p><a href="#" onClick="return false;">Fidelity guarantee<span>Covers against loss of money and / or stock by fraud or dishonesty of insured employees.</span>				</a></p>
+						
+						<p><a href="#" onClick="return false;">Public/Product liability<span>indemnity for Legal Liability to third Parties in respect of accidental bodily injury / death to third parties and / or loss / damage to third party property arising whilst the insured and / or its subsidiaries are acting in the normal course of its legitimate business.</span></a></p>
+						<p><a href="#" onClick="return false;">Professional indemnity<span>This policy protects professionals from legal liability that may arise due to acts of negligence, error or omission in the rendering of or failure to render professional services for others in the insured's capacity as a professional. 
+                        <br>Cover is available for, among others:
+                        <br> Lawyers
+                        <br> Trustees (Liability)
+                        <br> Medical (general practitioners, nurses, dentists, physiotherapists)
+                        </span></a></p>
+						
+						<p><a href="#" onClick="return false;">Travel Insurance<span>This is an insurance cover meant to protect you against unforeseen circumstances that occur after booking and paying for your trip, such as cancellation of vacation plans or emergencies at the destination.</span></a></p>
+
+                        </div>
+                        
+                        <div class="col-lg-4 col-lg-offset-1">
+                        <p><a href="#" onClick="return false;">Personal accident<span>Cover provides compensation to the insured for physical and visible body injury caused in an accident and further if the injury results in death or disablement.</span></a></p>
+                       
+                        <p><a href="#" onClick="return false;">Political violence & Terrorism<span>This policy covers damage and injuries occasioned by acts of terrorism, sabotage, mutiny, rebellion, insurrection and coup d'états (excluding war and civil war), strike, riot and civil commotion which are excluded from standard insurance policies. </span></a></p>					                    
+                        <p><a href="#" onClick="return false;">Domestic Package<span> Indemnify against loss of or damage on private dwelling house and its contents, owners legal liability and domestic servants. The policy defines a building as a private dwelling house or private flat including domestic outbuilding, Landlords fixtures and fittings, walls, gate and fences all on the same premises.</span></a></p>	
+                        
+                        <p><a href="#" onClick="return false;">Machinery Breakdown<span>This policy protects the machinery (such as factory production machinery, workshop machinery, generators, industrial lathes, drills, compressors e t c) of the insured against any unforeseen and sudden physical loss of or damage.
+<br>The cover gives compensation in the form of cost of repairing or replacing indemnifiable breakdown or losses to machinery. </span></a></p>
+                        
+                        <p><a href="#" onClick="return false;">Work Injury Benefit Act<span>Provides cover against liability at law for damages in respect to accidental death / bodily injury or disease suffered by an employee in the cause of employment. The  cover also includes medical and funeral expenses. </span></a></p>	
+                       
+                         <p><a href="#" onClick="return false;">Employers Liability<span>This policy provides cover to employers for legal liability upon death of or bodily injury to or illness of an employee. These death or Injuries may arise during and in the course of employment and result in a claim or claims first being made against the insured during the period of insurance for perceived negligence on the employer's part.
+
+<br>Cover is usually arranged on the basis of the employee's earnings.</span></a></p>
+                        
+                        <p><a href="#" onClick="return false;">All Risk<span>This policy provides cover for loss of or damage to the property insured caused by Fire, Theft or any Accidental means not excluded under the Policy.
+<br>It is best suited for portable items like laptops, personal computers, videos, baggage, cameras and other fragile electronic and / or personal items.
+<br>The policy specifies the geographical area acceptable within cover due to the mobile nature of these items.</span></a></p>
+                        
+                         <p><a href="#" onClick="return false;">Marine cargo<span>Provides cover for transportation of goods by sea or air against loss or damage by various risks. </span></a></p>
+                        
+                        </div>
+                       </div>
+                    </div>
+                </div>
+</section>
+
+     <!-- Footer -->
+    
+    <footer class="text-center" id="ContactUs">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-3">
+                        <h3>Our Location and Contact</h3>
+                            <address>
+                            
+                            <p>Head &nbsp Office</p>
+                            <p>1<sup>st</sup> Floor, &nbsp Lotus Plaza</p>
+                            <p>Parklands,&nbsp Chiromo Lane,&nbsp off Ojijo Road</p>
+                            <p>P. O&nbsp Box&nbsp 11287 - 00100</p>
+                            <p><b>TEL:&nbsp </b>3742624 <b>&nbspCELL: </b>0722 718738</p>
+                            <p><b>FAX:&nbsp </b>3742628</p>
+                            <p><b>EMAIL:&nbsp </b>info@aplaninsurancebrokers.com</p>
+                         
+                            </address>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Around the Web</h3>
+                        <ul class="list-inline">
+                             <li>
+                                <a href="https://www.facebook.com/aplaninsurancebrokers" target="_blank" class="btn-social btn-outline" ><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                             <li>
+                                <a href="https://plus.google.com/u/0/b/112121452983597496179" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                            </li>
+                         
+                            </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Downloads</h3>
+                       <p><a href="APAMotorClaimForm.pdf" download>Motor Claim Form</a></p>
+                  </div>
+            </div>
+        </div>
+       
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; A-Plan Insurance Co. Ltd &nbsp 2022 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>Designed by: <a href="https://www.linkedin.com/in/njungewanjoroge/" style="color: green;" target="_blank">Dennis Console</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll visible-xs visble-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- Portfolio Modals -->
+ 
+    <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+    <script src="js/script.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/freelancer.js"></script>
+    
+    <script src="js/jquery.jcarousellite-1.0.1.min.js"></script>
+    
+  <!-- jQuery -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+     
+    
+      <!-- FlexSlider -->
+    <script src="js/jquery.flexslider.js"></script>
+    
+    <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>
